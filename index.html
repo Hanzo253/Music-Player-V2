@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player V2</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="start-btn-container">
+      <button class="start-btn">Ready to listen to some music?</button>
+      <div class="preloader"></div>
+    </div>
+    <div class="music-player-container">
+      <button id="upload">Upload music file</button>
+      <input type="file" id="the-file" accept=".mp3,audio/*" multiple />
+      <audio id="music">
+        <source src="" id="src" />
+      </audio>
+      <div
+        id="music-dropzone"
+        ondrop="dropHandler(event);"
+        ondragover="dragOverHandler(event);"
+        ondragenter="dragEnterHandler(event);"
+        ondragleave="dragLeaveHandler(event);"
+      >
+        <input type="file" id="drag-drop" accept=".mp3,audio/*" multiple />
+        <h4 id="drag-text">Drag one or more audio files to this Drop Zone</h4>
+      </div>
+      <h1 class="song-title"></h1>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+      <h2 class="song-duration"></h2>
+      <button class="previous">
+        <i
+          id="previous-icon"
+          class="bi bi-skip-backward"
+          style="font-size: 2rem"
+        ></i>
+      </button>
+      <button class="play">
+        <i class="bi bi-play" style="font-size: 2rem"></i>
+      </button>
+      <button class="pause">
+        <i class="bi bi-pause" style="font-size: 2rem"></i>
+      </button>
+      <button class="next">
+        <i
+          id="next-icon"
+          class="bi bi-skip-forward"
+          style="font-size: 2rem"
+        ></i>
+      </button>
+      <div>
+        <button class="clear-song-list">
+          <strong>Clear Song List</strong>
+        </button>
+      </div>
+    </div>
+    <h3 id="song-list-heading">Song List</h3>
+    <div class="song-list"></div>
+    <script src="./main.js"></script>
+  </body>
+</html>

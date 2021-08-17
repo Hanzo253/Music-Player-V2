@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$player-button-colors: #06506d;
+
+body {
+  background: rgb(26, 165, 167);
+  background: radial-gradient(
+    circle,
+    rgba(26, 165, 167, 1) 25%,
+    rgba(6, 199, 149, 1) 62%
+  );
+}
+
+.start-btn-container {
+  display: grid;
+  width: 100%;
+  padding: 1%;
+}
+
+.start-btn {
+  margin: auto;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  padding: 1em 2em;
+
+  &:hover {
+    color: rgb(11, 253, 72);
+  }
+}
+
+.start-btn:hover,
+.start-btn:focus {
+  animation: start-btn 1s;
+  box-shadow: 0 0 0 2em rgba(rgb(230, 6, 6), 0);
+}
+
+@keyframes start-btn {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+//=== Set button colors
+// If you wonder why use Sass vars or CSS custom properties...
+// Make a map with the class names and matching colors
+$colors: (
+  start-btn: #0a319b,
+  play: $player-button-colors,
+  pause: $player-button-colors,
+  next: $player-button-colors,
+  previous: $player-button-colors,
+  upload: #0a9b5f,
+  clear-song-list: $player-button-colors,
+);
+
+// Sass variables compile to a static string; CSS variables are dynamic and inherited
+// Loop through the map and set CSS custom properties using Sass variables
+@each $button, $color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+  }
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+
+  &:hover,
+  &:focus {
+    border-color: var(--hover);
+    color: rgb(255, 251, 0);
+  }
+}
+
+.preloader {
+  // align-items: center;
+  // display: flex;
+  // justify-content: center;
+  @include flex();
+  transition: opacity 0.3s linear;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  opacity: 1;
+}
+
+.preloader.loaded {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.music-player-container {
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  width: 30%;
+  margin: auto;
+}
+
+.song-title {
+  text-align: center;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 0.5em 2em;
+}
+
+// Animate the size, inside
+.play:hover,
+.play:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+// Animate the size, inside
+.pause:hover {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+// And from the left
+.next:hover,
+.next:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+
+// And from the right
+.previous:hover,
+.previous:focus {
+  box-shadow: inset -6.5em 0 0 0 var(--hover);
+}
+
+// Stack multiple shadows, one from the left, the other from the right
+.clear-song-list:hover,
+.clear-song-list:focus {
+  box-shadow: inset -5.5em 0 0 0 var(--hover), inset 5.5em 0 0 0 var(--hover);
+}
+
+.progress-bar {
+  background-color: lightgray;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  width: 75%;
+  height: 10px;
+  display: grid;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+.progress {
+  background-color: turquoise;
+  border-radius: 10px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+#music-dropzone {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @include flex();
+  margin: auto;
+  border: 5px solid blue;
+  width: 100%;
+  height: 200px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.song-list {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  @include flex();
+}
+
+#upload:hover,
+#upload:focus {
+  color: #11583b;
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+input[type="file"] {
+  display: none;
+}
+
+h3 {
+  text-align: center;
+  color: crimson;
+  font-size: 1.5em;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  margin-bottom: -0.3%;
+}
+
+ul {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+
+li {
+  font-size: 1.2em;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  counter-increment: my-awesome-counter;
+  margin: 0.25rem;
+}
+
+li::before {
+  content: counter(my-awesome-counter);
+  background: #0b4abe;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem;
+}
