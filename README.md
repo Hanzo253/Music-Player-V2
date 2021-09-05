@@ -12,3 +12,28 @@ Project Specifications:
 - Name, duration, and current time of the song being played are displayed
 
 Link to check it out: https://hanzo253.github.io/Music-Player-V2/
+
+## How I worked on this project
+
+- I worked with tasks on a ClickUp board: [Screenshot of tasks](https://lensdump.com/i/Zw1889)
+- I use Visual Studio Code as the IDE.
+
+## How to navigate this project
+
+- Music Player V2 logic: [JavaScript Code](https://github.com/Hanzo253/Music-Player-V2/blob/main/main.js)
+- Music Player V2 Styles and Design: [CSS/SCSS](https://github.com/Hanzo253/Music-Player-V2/blob/main/styles.scss)
+- Music Player V2 HTML Markup: [HTML Markup](https://github.com/Hanzo253/Music-Player-V2/blob/main/index.html)
+
+## Why I built the project this way
+
+- I decided to use some jQuery because there was some syntax that made it easier to implement the logic. For example, $("#src").attr("src", URL.createObjectURL(songs[fileIndex])); allowed me to change the src of the audio easily with less syntax.
+- I used SCSS since it allows me to use CSS in functions or variables which helps in having to typing the same CSS syntax again. It also allows some styles to be implmented easier.
+- I am focused on improving my HTML, CSS, and vanilla JavaScript, so I did not want to use bootstrap or too much jQuery this time.
+- I wanted to make a music player that gives the user a choice to upload an audio file with a button or simple drag that audio file to drag and drop area.
+- This music player was meant to let the user make his own playlist of songs since every person has their own taste of music, so it helps them enjoy using this app because they can play their own songs.
+
+## Upcoming Changes
+
+- I will make this app responsive later
+- I am going to think of a solution to allow users to click on the songs in the song list and make the music player play it.
+- I plan on changing the design of the alert to give it some more style
