@@ -34,6 +34,5 @@ Link to check it out: https://hanzo253.github.io/Music-Player-V2/
 
 ## Upcoming Changes
 
-- I will make this app responsive
-- I am going to think of a solution to allow users to click on the songs in the song list and make the music player play it.
-- I plan on changing the design of the alert to give it some more style
+- I will make this app responsive.
+- I plan on changing the design of the alert to give it some more style.
