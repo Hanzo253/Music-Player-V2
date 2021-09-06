@@ -225,6 +225,7 @@ li {
     Helvetica, Arial, "Lucida Grande", sans-serif;
   counter-increment: my-awesome-counter;
   margin: 0.25rem;
+  cursor: pointer;
 }
 
 li::before {
@@ -238,4 +239,8 @@ li::before {
   color: white;
   text-align: center;
   margin-right: 0.5rem;
+}
+
+li:hover {
+  color: lightcyan;
 }

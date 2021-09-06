@@ -224,6 +224,13 @@ $(document).ready(function () {
   prevBtn.addEventListener("click", previousSong);
   audio.addEventListener("ended", nextSong);
   clearSongListBtn.addEventListener("click", clearSongList);
+  // songList.addEventListener("click", (e) => {
+  //   var element = e.target;
+  //   var source = document.getElementById("src");
+  //   source.src = element.getAttribute("data-value");
+  //   audio.load();
+  //   audio.play();
+  // });
 });
 
 // binds the event on to the styled button to trigger the file button
