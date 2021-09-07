@@ -244,3 +244,62 @@ li::before {
 li:hover {
   color: lightcyan;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .music-player-container {
+    max-width: 100%;
+  }
+}
+
+// /* Small devices (portrait tablets and large phones, 600px and up) */
+// @media only screen and (min-width: 600px) {
+//   .music-player-container {
+//     width: 100%;
+//   }
+// }
+
+@media only screen and (max-width: 1250px) {
+  .music-player-container {
+    width: 40%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 1202px) {
+  .music-player-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .music-player-container {
+    width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  .music-player-container {
+    width: 100%;
+  }
+}
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {
+//   .music-player-container {
+//     width: 100%;
+//   }
+// }
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {
+//   .music-player-container {
+//     width: 100%;
+//   }
+// }
+
+// @media only screen and (orientation: landscape) {
+//   .music-player-container {
+//     width: 100%;
+//   }
+// }
