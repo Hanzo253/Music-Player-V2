@@ -225,7 +225,6 @@ li {
     Helvetica, Arial, "Lucida Grande", sans-serif;
   counter-increment: my-awesome-counter;
   margin: 0.25rem;
-  cursor: pointer;
 }
 
 li::before {
@@ -241,23 +240,12 @@ li::before {
   margin-right: 0.5rem;
 }
 
-li:hover {
-  color: lightcyan;
-}
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .music-player-container {
     max-width: 100%;
   }
 }
-
-// /* Small devices (portrait tablets and large phones, 600px and up) */
-// @media only screen and (min-width: 600px) {
-//   .music-player-container {
-//     width: 100%;
-//   }
-// }
 
 @media only screen and (max-width: 1250px) {
   .music-player-container {
@@ -283,23 +271,3 @@ li:hover {
     width: 100%;
   }
 }
-
-// /* Large devices (laptops/desktops, 992px and up) */
-// @media only screen and (min-width: 992px) {
-//   .music-player-container {
-//     width: 100%;
-//   }
-// }
-
-// /* Extra large devices (large laptops and desktops, 1200px and up) */
-// @media only screen and (min-width: 1200px) {
-//   .music-player-container {
-//     width: 100%;
-//   }
-// }
-
-// @media only screen and (orientation: landscape) {
-//   .music-player-container {
-//     width: 100%;
-//   }
-// }
