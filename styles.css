@@ -271,7 +271,6 @@ li::before {
   margin-right: 0.5rem;
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .music-player-container {
     max-width: 100%;
@@ -284,7 +283,6 @@ li::before {
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 1202px) {
   .music-player-container {
     width: 50%;
