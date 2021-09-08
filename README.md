@@ -34,4 +34,4 @@ Link to check it out: https://hanzo253.github.io/Music-Player-V2/
 
 ## Recent Changes
 
-- Music Player V2 is now responsive with mobile and tablet devices
+- Music Player V2 is now responsive with mobile and tablet devices.
