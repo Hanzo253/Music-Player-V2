@@ -239,3 +239,33 @@ li::before {
   text-align: center;
   margin-right: 0.5rem;
 }
+
+@media only screen and (max-width: 600px) {
+  .music-player-container {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .music-player-container {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1202px) {
+  .music-player-container {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .music-player-container {
+    width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  .music-player-container {
+    width: 100%;
+  }
+}
