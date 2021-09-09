@@ -31,7 +31,7 @@ Link to check it out: https://hanzo253.github.io/Music-Player-V2/
 - I used SCSS since it allows me to use CSS in functions or variables which helps in having to typing the same CSS syntax again. It also allows some styles to be implmented easier.
 - I am focused on improving my HTML, CSS, and vanilla JavaScript, so I did not want to use bootstrap or too much jQuery this time.
 - I wanted to make a music player that gives the user a choice to upload an audio file with a button or simply drag that audio file to drag and drop area.
-- This music player was meant to let the user make his own playlist of songs since every person has their own taste of music, so it helps them enjoy using this app because they can play their own songs.
+- This music player was meant to let the user make his own playlist of songs since each person has their own taste of music, so it helps them enjoy using this app because they can play their own songs.
 
 ## Recent Changes
 
