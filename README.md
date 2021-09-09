@@ -10,6 +10,7 @@ Project Specifications:
 - Play and Pause Button
 - File upload with button and drag and drop feature
 - Name, duration, and current time of the song being played are displayed
+- Multiple songs can now be uploaded instead of just one song
 
 Link to check it out: https://hanzo253.github.io/Music-Player-V2/
 
