@@ -29,7 +29,7 @@ Link to check it out: https://hanzo253.github.io/Music-Player-V2/
 - I decided to use some jQuery because there was some syntax that made it easier to implement the logic. For example, $("#src").attr("src", URL.createObjectURL(songs[fileIndex])); allowed me to change the src of the audio easily with less syntax.
 - I used SCSS since it allows me to use CSS in functions or variables which helps in having to typing the same CSS syntax again. It also allows some styles to be implmented easier.
 - I am focused on improving my HTML, CSS, and vanilla JavaScript, so I did not want to use bootstrap or too much jQuery this time.
-- I wanted to make a music player that gives the user a choice to upload an audio file with a button or simple drag that audio file to drag and drop area.
+- I wanted to make a music player that gives the user a choice to upload an audio file with a button or simply drag that audio file to drag and drop area.
 - This music player was meant to let the user make his own playlist of songs since every person has their own taste of music, so it helps them enjoy using this app because they can play their own songs.
 
 ## Recent Changes
