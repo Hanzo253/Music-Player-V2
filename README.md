@@ -16,7 +16,7 @@ Link to check it out: https://hanzo253.github.io/Music-Player-V2/
 
 ## How I worked on this project
 
-- I worked with tasks on a ClickUp board: [Screenshot of tasks](https://lensdump.com/i/ZxaC5a)
+- I worked with tasks on a ClickUp board: [Screenshot of tasks](https://lensdump.com/a/giJmk)
 - I use Visual Studio Code as the IDE.
 
 ## How to navigate this project
