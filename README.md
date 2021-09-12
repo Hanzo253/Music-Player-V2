@@ -33,6 +33,10 @@ Link to check it out: https://hanzo253.github.io/Music-Player-V2/
 - I wanted to make a music player that gives the user a choice to upload an audio file with a button or simply drag that audio file to drag and drop area.
 - This music player was meant to let the user make his own playlist of songs since each person has their own taste of music, so it helps them enjoy using this app because they can play their own songs.
 
+## If I had more time, I would change this
+
+- Add integration testing, unit testing, and end-to-end testing
+
 ## Recent Changes
 
 - Music Player V2 is now responsive with mobile and tablet devices.
