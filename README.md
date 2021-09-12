@@ -22,7 +22,7 @@ Link to check it out: https://hanzo253.github.io/Music-Player-V2/
 ## How to navigate this project
 
 - Music Player V2 logic: [JavaScript Code](https://github.com/Hanzo253/Music-Player-V2/blob/main/main.js)
-- Music Player V2 Styles and Design: [CSS/SCSS](https://github.com/Hanzo253/Music-Player-V2/blob/main/styles.scss)
+- Music Player V2 CSS Styles and Design: [CSS/SCSS](https://github.com/Hanzo253/Music-Player-V2/blob/main/styles.scss)
 - Music Player V2 HTML Markup: [HTML Markup](https://github.com/Hanzo253/Music-Player-V2/blob/main/index.html)
 
 ## Why I built the project this way
